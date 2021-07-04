@@ -1,0 +1,20 @@
+.DS_Store
+node_modules/
+dist/
+yhz_screening_sys_beta/
+yhz_screening_sys/
+yhz_screening_sys_beta.zip
+yhz_screening_sys.zip
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+package-lock.json
+tests/**/coverage/
+
+# Editor directories and files
+.idea
+.vscode
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
