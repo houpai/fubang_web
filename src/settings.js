@@ -1,3 +1,3 @@
 module.exports = {
-  title: '富邦',
+  title: '富邦门户网站',
 }

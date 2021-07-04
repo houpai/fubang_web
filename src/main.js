@@ -8,10 +8,12 @@ import "element-ui/lib/theme-chalk/index.css"
 import VueBus from "vue-bus"
 
 import "@/styles/index.scss" // global css
+import "@/assets/icon/iconfont.css"
 
 import App from "./App"
 import store from "./store"
 import router from "./router"
+import "@/permission" // permission control
 
 
 import * as filters from './filters' // global filters

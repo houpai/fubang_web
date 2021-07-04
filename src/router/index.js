@@ -4,6 +4,7 @@ import Router from "vue-router"
 Vue.use(Router)
 
 export const constantRoutes = [
+  {path: "/", redirect: "/index"},
   {
     path: "/index",
     component: () => import("@/views/Index/index"),
@@ -15,11 +16,10 @@ export const constantRoutes = [
   {
     path: "/404",
     component: () => import("@/views/404"),
-    hidden: true
   },
 
   // 404 page must be placed at the end !!! push routes end
-  {path: "*", redirect: "/404", hidden: true}
+  {path: "*", redirect: "/404"}
 ]
 
 const createRouter = () => new Router({

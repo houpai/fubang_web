@@ -1,6 +1,6 @@
 <template>
   <div class="index-container">
-    index
+    <i class="iconfont icon-zuo"></i>
   </div>
 </template>
 

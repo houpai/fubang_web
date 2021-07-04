@@ -16,6 +16,7 @@ router.beforeEach(async (to, from, next) => {
   NProgress.start()
   // set page title
   document.title = getPageTitle(to.meta.title)
+  console.log('to.meta.title ====',to.meta.title)
   next()
   NProgress.done()
 })
