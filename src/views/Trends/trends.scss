@@ -1,0 +1,125 @@
+.main {
+  position: relative;
+  margin: 0 auto;
+  width: 1000px;
+  overflow: hidden;
+  padding-bottom: 40px;
+
+  .title {
+    text-align: center;
+
+    h1 {
+      color: #3F95D1;
+      font-weight: bold;
+      font-size: 30px;
+    }
+
+    .tag {
+      color: #889392;
+      font-size: 18px;
+    }
+  }
+
+  .content {
+    display: flex;
+    justify-content: space-between;
+
+    .list {
+      width: 468px;
+      height: 359px;
+
+      .list-ul {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+
+        .list-item {
+          padding: 0;
+          margin: 0;
+          padding-bottom: 15px;
+          margin-bottom: 15px;
+          position: relative;
+          min-height: 88px;
+          border-bottom-color: #ddd;
+          border-bottom-width: 1px;
+          border-bottom-style: dotted;
+
+          .list-title {
+            padding: 0;
+            margin: 0;
+            width: 100%;
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 1;
+            overflow: hidden;
+
+            a {
+              line-height: 24px;
+              display: block;
+              font-family: 'Microsoft YaHei';
+              font-size: 14px;
+              font-style: normal;
+              font-weight: bold;
+              color: #404040;
+              text-decoration: none;
+            }
+          }
+
+          .list-desc {
+            padding: 0;
+            margin: 0;
+            margin-top: 5px;
+            line-height: 18px;
+            font-family: 'Microsoft YaHei';
+            font-size: 12px;
+            font-style: normal;
+            font-weight: normal;
+            color: #999;
+            text-decoration: none;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            word-break: break-all;
+            overflow: hidden;
+            text-overflow: ellipsis;
+          }
+
+          .list-bottom {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 5px;
+            height: 20px;
+            line-height: 20px;
+            font-family: 'Microsoft YaHei';
+            font-size: 12px;
+            font-style: normal;
+            font-weight: normal;
+            color: #BBB;
+
+            .list-date {
+              padding: 0;
+              margin: 0;
+              display: inline-block;
+              font-family: 'Microsoft YaHei';
+              text-decoration: none;
+            }
+
+            .list-viewnum {
+              display: flex;
+              align-items: center;
+
+              img {
+                margin-right: 5px;
+                width: 15px;
+                height: 13px;
+              }
+            }
+          }
+        }
+      }
+    }
+
+  }
+
+}

@@ -5,6 +5,13 @@
 */
 <template>
   <div class="index-container">
+    <commonTitle
+      :title-text="'关于我们'"
+      :title-text-en="'About Us'"
+    />
+    <aboutUs/>
+    <business/>
+    <trends/>
 
   </div>
 </template>
@@ -12,14 +19,25 @@
 <script>
 
 import { mapGetters } from 'vuex'
+import commonTitle from '../../components/Title/Title'
+import aboutUs from './component/about/about'
+import business from "@/views/Index/component/business/business";
+import trends from "@/views/Trends/trends";
 
 export default {
   name: 'Dashboard',
+  components:{
+    commonTitle,
+    aboutUs,
+    business,
+    trends
+  },
   computed: {
     ...mapGetters([
       'name'
     ])
-  }
+  },
+
 }
 </script>
 

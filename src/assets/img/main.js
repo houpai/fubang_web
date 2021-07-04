@@ -21,7 +21,7 @@ import * as filters from './filters' // global filters
 import $ from "jquery"
 import "./utils/startUp"
 
-import animated from 'animate.css'
+import animated from 'animate.css' 
 Vue.use(animated)
 
 

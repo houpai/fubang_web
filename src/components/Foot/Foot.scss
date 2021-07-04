@@ -1,0 +1,88 @@
+.foot_container {
+  background-color: rgb(102, 102, 102);
+  background-image: none;
+  background-position: left top;
+  background-repeat: repeat;
+  background-size: auto;
+  z-index: -1;
+
+  .foot_content {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 0;
+    margin: 0 auto;
+    width: 1000px;
+
+    .company-info {
+      padding-top: 20px;
+      line-height: 24px;
+      text-align: left;
+
+      .company-info-item {
+        display: flex;
+        overflow: hidden;
+        margin-bottom: 10px;
+        color: #ffffff;
+        font-size: 16px;
+        font-family: 'Microsoft YaHei';
+        font-weight: 400;
+        text-decoration: none;
+        font-style: normal;
+
+        .company-info-titleBox {
+          width: 50px;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+        }
+      }
+    }
+
+    .foot_form {
+      width: 443px;
+
+      .btn {
+        text-align: center;
+      }
+    }
+  }
+}
+
+.foot_area {
+  width: 100%;
+  padding-top: 4px;
+  font-size: 12;
+  background-color: #ffffff;
+  font-family: Tahoma;
+  position: relative;
+  z-index: 3;
+
+  .foot_page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 0 13px;
+
+    .foot_text {
+      color: rgb(152, 152, 152);
+      font-size: 12px;
+
+      .ipv6-box {
+        display: inline-block;
+        margin-left: 4px;
+        text-align: center;
+        border-radius: 4px;
+        border: 1px solid rgba(152, 152, 152, 1);
+        padding: 3px;
+      }
+    }
+
+    .divider {
+      background: rgb(152, 152, 152);
+      height: 12px;
+      font-size: 12px;
+      margin: 0 10px;
+      width: 1px;
+    }
+  }
+}

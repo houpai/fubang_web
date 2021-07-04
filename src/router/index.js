@@ -12,6 +12,13 @@ export const constantRoutes = [
       title: '首页'
     }
   },
+  {
+    path: "/trends",
+    component: () => import("@/views/Trends/trends"),
+    meta:{
+      title: '行业动态'
+    }
+  },
 
   {
     path: "/404",
@@ -19,7 +26,7 @@ export const constantRoutes = [
   },
 
   // 404 page must be placed at the end !!! push routes end
-  {path: "*", redirect: "/404"}
+  {path: "*", redirect: "/index"}
 ]
 
 const createRouter = () => new Router({
