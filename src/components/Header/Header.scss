@@ -1,0 +1,46 @@
+.Header_container {
+  height: 60px;
+
+  .Header_container_content {
+    margin: 0 auto;
+    width: 1000px;
+    max-width: 1000px;
+    background: #fff;
+    height: 100%;
+    display: flex;
+    align-items: center;
+
+
+    .logo {
+      display: block;
+      width: 180px;
+      height: 30px;
+      margin-right: 15px;
+    }
+
+
+    .menu_list {
+      flex: 1;
+      width: 0;
+      height: 100%;
+      display: flex;
+      align-items: center;
+
+      li {
+        height: 20px;
+        width: 20%;
+        text-align: center;
+        border-right: 1px solid #cccccc;
+        font-size: 14px;
+        color: #000000;
+        font-weight: normal;
+        font-style: normal;
+        cursor: pointer;
+      }
+
+      li.active_menu {
+        color: #059fe9;
+      }
+    }
+  }
+}
