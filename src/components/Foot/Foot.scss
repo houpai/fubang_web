@@ -86,3 +86,64 @@
     }
   }
 }
+
+.submit_btn:hover {
+  color: #fff;
+  background-color: #2bb783;
+  border-color: #2bb783;
+}
+
+.submit_btn {
+  display: inline-block;
+  margin: 0;
+  padding: 0 16px;
+  cursor: pointer;
+  outline: none;
+  min-width: 100px;
+  height: 36px;
+  line-height: 36px;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-top-width: 1px;
+  border-top-style: solid;
+  border-top-color: #eeeeee;
+  border-right-width: 1px;
+  border-right-style: solid;
+  border-right-color: #eeeeee;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: #eeeeee;
+  border-left-width: 1px;
+  border-left-style: solid;
+  border-left-color: #eeeeee;
+  background-color: rgb(243, 243, 243);
+  background-image: none;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background: -moz-linear-gradient(top, none, none);
+  background: -o-linear-gradient(top, none, none);
+  background: linear-gradient(top, none, none);
+  background: -webkit-gradient(linear, left top, left bottom, from(none), to(none));
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  color: #666666;
+  font-size: 14px;
+  font-weight: 400;
+  font-style: normal;
+  text-decoration: none;
+  -webkit-transition: all 200ms linear;
+  -moz-transition: all 200ms linear;
+  -o-transition: all 200ms linear;
+  -ms-transition: all 200ms linear;
+  transition: all 200ms linear;
+}
+
+.verify_dom {
+  height: 40px;
+  width: 100px;
+  background-color: #fff;
+  border-radius: 0 4px 4px 0;
+  overflow: hidden;
+}

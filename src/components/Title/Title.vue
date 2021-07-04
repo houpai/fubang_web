@@ -61,16 +61,16 @@ export default {
   methods:{
     showDiv() {
       let showId = document.getElementById(`${this.animateId}`);
-      console.log('showId==', showId)
-      console.log('this.animateId==', this.animateId)
+      // console.log('showId==', showId)
+      // console.log('this.animateId==', this.animateId)
       if(this.show || !showId) return false
       let isView = $isInViewPortOfOne(showId)
-      console.log('isView ===', isView)
+      // console.log('isView ===', isView)
       if(isView) this.show = true
       let clients = window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight;
-      console.log('showId ===', showId)
-      console.log('clients ===', clients)
-      console.log('divTop ===', divTop)
+      // console.log('showId ===', showId)
+      // console.log('clients ===', clients)
+      // console.log('divTop ===', divTop)
       let divTop = showId.getBoundingClientRect().top;
       if(divTop<=clients){
         this.show = true

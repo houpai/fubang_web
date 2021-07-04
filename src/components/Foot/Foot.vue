@@ -35,14 +35,17 @@
           <el-form-item prop="email">
             <el-input v-model="form.email" placeholder="联系邮箱"></el-input>
           </el-form-item>
-          <el-form-item prop="code">
+          <el-form-item prop="code" class="el-form-item_flex">
             <el-input v-model="form.code" placeholder="验证码">
-              <div slot="append">123123</div>
+
             </el-input>
+            <div class="verify_dom" id="v_container">
+
+            </div>
           </el-form-item>
           <el-form-item>
             <div class="btn">
-              <el-button type="success" plain @click="onSubmit('form')">提交</el-button>
+              <div class="submit_btn" @click="onSubmit('form')">提交</div>
             </div>
           </el-form-item>
         </el-form>
@@ -88,9 +91,12 @@
 </template>
 
 <script>
+
+import '@/utils/verify'
+
 export default {
   name: "Foot",
-  
+
   data() {
     return {
       form: {
@@ -127,6 +133,20 @@ export default {
         }
       });
     }
+  },
+  created() {
+    this.$nextTick(() => {
+      // 表单提交 和 图片验证码验证逻辑
+      var verifyCode = new GVerify("v_container");
+      // document.getElementById("submit_btn").onclick = function(){
+      //   var res = verifyCode.validate(document.getElementById("input_code_value").value);
+      //   if(res){
+      //     alert("验证正确");
+      //   }else{
+      //     alert("验证码错误");
+      //   }
+      // }
+    })
   }
 };
 </script>

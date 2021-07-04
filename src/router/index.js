@@ -13,6 +13,20 @@ export const constantRoutes = [
     }
   },
   {
+    path: "/about",
+    component: () => import("@/views/About/about"),
+    meta:{
+      title: '关于我们'
+    }
+  },
+  {
+    path: "/Business",
+    component: () => import("@/views/Business/business"),
+    meta:{
+      title: '行业领域'
+    }
+  },
+  {
     path: "/trends",
     component: () => import("@/views/Trends/trends"),
     meta:{

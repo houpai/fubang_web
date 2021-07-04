@@ -89,6 +89,10 @@ video {
   border: 0;
   font-weight: normal;
   vertical-align: baseline;
+  -webkit-user-select:none;
+  -moz-user-select:none;
+  -ms-user-select:none;
+  user-select:none;
 }
 
 

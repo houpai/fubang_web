@@ -1,11 +1,14 @@
+/**
+*@desc: 行业动态
+*@author: houpai
+*@date 2021/07/05 02:00:17
+*/
 <template>
   <div class="index-container">
-
     <commonTitle
       :title-text="'行业动态'"
       :title-text-en="'Industry trends'"
     />
-
     <div class="main" :id="animateId">
       <div class="content">
         <transition name="fade" enter-active-class="animate__animated animate__bounceInLeft">
@@ -55,7 +58,6 @@ import commonTitle from '../../components/Title/Title'
 import {$uuid,$isInViewPortOfOne} from '../../utils/index'
 
 export default {
-  name: "Dashboard",
   components:{
     commonTitle
   },
@@ -109,16 +111,16 @@ export default {
   methods:{
     showDiv() {
       let showId = document.getElementById(`${this.animateId}`);
-      console.log('showId==', showId)
-      console.log('this.animateId==', this.animateId)
+      // console.log('showId==', showId)
+      // console.log('this.animateId==', this.animateId)
       if(this.show || !showId) return false
       let isView = $isInViewPortOfOne(showId)
-      console.log('isView ===', isView)
+      // console.log('isView ===', isView)
       if(isView) this.show = true
       let clients = window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight;
-      console.log('showId ===', showId)
-      console.log('clients ===', clients)
-      console.log('divTop ===', divTop)
+      // console.log('showId ===', showId)
+      // console.log('clients ===', clients)
+      // console.log('divTop ===', divTop)
       let divTop = showId.getBoundingClientRect().top;
       if(divTop<=clients){
         this.show = true
