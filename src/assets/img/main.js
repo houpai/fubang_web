@@ -16,12 +16,11 @@ import router from "./router"
 import "@/permission" // permission control
 
 
-import * as filters from './filters' // global filters
 
 import $ from "jquery"
 import "./utils/startUp"
 
-import animated from 'animate.css' 
+import animated from 'animate.css'
 Vue.use(animated)
 
 
@@ -32,10 +31,6 @@ Vue.use(VueBus)
 
 Vue.config.productionTip = false
 
-// register global utility filters
-Object.keys(filters).forEach(key => {
-  Vue.filter(key, filters[key])
-})
 
 new Vue({
   el: "#app",

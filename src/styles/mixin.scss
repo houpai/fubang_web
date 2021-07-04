@@ -28,3 +28,10 @@
 }
 
 
+@mixin animated {
+  animation-duration: 10s;
+  animation-fill-mode: both;
+  webkit-animation-play-state: both;
+}
+
+

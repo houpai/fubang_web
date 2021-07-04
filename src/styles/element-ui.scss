@@ -62,35 +62,9 @@
 }
 
 
-.questionContent_container .el-table td, .questionContent_container .el-table th.is-leaf,.el-table--border, .el-table--group{
-  border:0.5px solid #DCDFE6
-}
-.questionContent_container .el-table--border::after, .questionContent_container  .el-table--group::after, .el-table::before{
-  background-color: #DCDFE6;
-}
-
-.questionContent_scroll .el-scrollbar__wrap {
-  overflow-x: hidden;
-}
 
 
-.questionContent_scroll .el-scrollbar__wrap {
-  overflow-x: hidden;
-}
 
-.paySetting_scroll .el-scrollbar__wrap {
-  overflow-x: hidden;
+.el-form-item {
+  margin-bottom: 22px!important;
 }
-
-.pagination-container {
-  padding: 16px 8px!important;
-}
-
-.el-image-viewer__wrapper {
-  z-index: 2005!important;
-}
-
-.logicDialog .el-dialog__body{
-  padding:0 20px!important;
-}
-

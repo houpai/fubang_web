@@ -6,7 +6,7 @@
       :title-text-en="'Industry trends'"
     />
 
-    <div class="main" id="boxId">
+    <div class="main" :id="animateId">
       <div class="content">
         <transition name="fade" enter-active-class="animate__animated animate__bounceInLeft">
           <div class="list animated" v-if="show">
@@ -52,6 +52,7 @@
 <script>
 import { mapGetters } from "vuex";
 import commonTitle from '../../components/Title/Title'
+import {$uuid,$isInViewPortOfOne} from '../../utils/index'
 
 export default {
   name: "Dashboard",
@@ -64,6 +65,7 @@ export default {
   data() {
     return {
       show: false,
+      animateId:'',
       list: [
         {
           title: "国际贸易中电子合同诈骗的骗术与防范",
@@ -104,17 +106,36 @@ export default {
       ]
     };
   },
-  mounted () {
-    window.addEventListener('scroll', this.handleScroll)
-  },
-  methods: {
-    handleScroll () {
-      const elOffsetTop = document.getElementById('boxId').offsetTop
-      const docScrollTop = document.documentElement.scrollTop
-      if (elOffsetTop >= docScrollTop && elOffsetTop < (docScrollTop + window.innerHeight)) {
-        this.show = true;
+  methods:{
+    showDiv() {
+      let showId = document.getElementById(`${this.animateId}`);
+      console.log('showId==', showId)
+      console.log('this.animateId==', this.animateId)
+      if(this.show || !showId) return false
+      let isView = $isInViewPortOfOne(showId)
+      console.log('isView ===', isView)
+      if(isView) this.show = true
+      let clients = window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight;
+      console.log('showId ===', showId)
+      console.log('clients ===', clients)
+      console.log('divTop ===', divTop)
+      let divTop = showId.getBoundingClientRect().top;
+      if(divTop<=clients){
+        this.show = true
       }
     }
+  },
+  mounted () {
+    window.addEventListener('scroll', this.showDiv)
+  },
+  beforeDestroy() {
+    window.removeEventListener('scroll', this.showDiv)
+  },
+  created() {
+    this.animateId = $uuid();
+    this.$nextTick(()=> {
+      this.showDiv()
+    })
   }
 };
 </script>
