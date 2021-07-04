@@ -1,8 +1,6 @@
 @import './variables.scss';
 @import './mixin.scss';
-@import './transition.scss';
 @import './element-ui.scss';
-@import './sidebar.scss';
 
 
 html,
@@ -151,26 +149,4 @@ div:focus {
     clear: both;
     height: 0;
   }
-}
-
-// main-container global css
-.app-container {
-  padding: 20px;
-}
-
-.m_span {
-  margin: 0 5px;
-  color: #409EFF;
-  cursor: pointer;
-  user-select:none;
-}
-
-.thumbnail {
-  width: 140px;
-  height: 80px;
-  border-radius: 4px;
-}
-
-.el-image-viewer__wrapper {
-  z-index: 2005!important;
 }

@@ -1,6 +1,11 @@
+/**
+*@desc: 首页
+*@author: houpai
+*@date 2021/07/04 22:28:46
+*/
 <template>
   <div class="index-container">
-    <i class="iconfont icon-zuo"></i>
+
   </div>
 </template>
 
