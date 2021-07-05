@@ -113,8 +113,20 @@ export default {
     },
     mapHandle() {
       let map = new BMap.Map("map_canvas");
+
+      // 初始化地图,设置中心点坐标和地图级别
       let poi = new BMap.Point(123.467933, 41.68383);
       map.centerAndZoom(poi, 12);
+
+      // 标记
+      let point = new window.BMap.Point(123.467933, 41.68383);
+      let mk = new BMap.Marker(point);
+      map.addOverlay(mk);
+
+      //添加地图类型控件
+      map.addControl(new BMap.NavigationControl());
+      map.addControl(new BMap.MapTypeControl());
+      map.enableScrollWheelZoom(true);
     },
   },
   created() {
