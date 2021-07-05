@@ -10,21 +10,22 @@
   <meta HTTP-EQUIV="expires" CONTENT="Wed, 26 Feb 1997 08:21:57 GMT">
   <meta HTTP-EQUIV="expires" CONTENT="0">
   <link rel="icon" href="<%= BASE_URL %>favicon.ico">
-  <title><%= webpackConfig.name %></title>
-  <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=nSRkLovUkrPf8Nxv8ESy0L83"></script>
+  <title>
+    <%= webpackConfig.name %>
+  </title>
 
-  <!-- <script>
+  <script>
     let script = document.createElement('script')
     script.type = 'text/javascript'
-    script.src = `http://api.map.baidu.com/api?v=2.0&ak=${process.env.VUE_APP_BAIDU_AK}`
+    script.src = `http://api.map.baidu.com/api?v=2.0&ak=${process.env.VUE_APP_BAIDU_AK}&callback=mapinit`
     document.getElementsByTagName('head')[0].appendChild(script)
-  </script> -->
+  </script>
 </head>
 
 <body>
   <noscript>
     <strong>We're sorry but <%= webpackConfig.name %> doesn't work properly without JavaScript enabled. Please enable it
-      to continue.</strong>
+        to continue.</strong>
   </noscript>
   <div id="app"></div>
   <!-- built files will be auto injected -->
