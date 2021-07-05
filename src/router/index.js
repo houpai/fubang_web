@@ -33,7 +33,15 @@ export const constantRoutes = [
       title: '行业动态'
     }
   },
+  {
+    path: "/contact",
+    component: () => import("@/views/Contact/contact"),
+    meta:{
+      title: '联系我们'
+    }
+  },
 
+  
   {
     path: "/404",
     component: () => import("@/views/404"),

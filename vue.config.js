@@ -49,23 +49,23 @@ module.exports = {
       })
     )
 
-    config.plugins.push(
-      new FileManagerPlugin({
-        events: {
-          onEnd: {
-            delete: [
-              outPutDir + '.zip'
-            ],
-            archive: [
-              {
-                source: outPutDir,
-                destination: outPutDir + '.zip'
-              }
-            ]
-          }
-        }
-      })
-    )
+    // config.plugins.push(
+    //   new FileManagerPlugin({
+    //     events: {
+    //       onEnd: {
+    //         delete: [
+    //           outPutDir + '.zip'
+    //         ],
+    //         archive: [
+    //           {
+    //             source: outPutDir,
+    //             destination: outPutDir + '.zip'
+    //           }
+    //         ]
+    //       }
+    //     }
+    //   })
+    // )
   },
   chainWebpack(config) {
     // it can improve the speed of the first screen, it is recommended to turn on preload
