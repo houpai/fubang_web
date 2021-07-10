@@ -23,7 +23,7 @@ export default {
   name: "Header",
   watch:{
     '$route':function (val) {
-      console.log('route ===', val)
+      // console.log('route ===', val)
     }
   },
   methods:{
