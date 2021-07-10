@@ -16,7 +16,7 @@
             <ul class="list-ul">
               <li class="list-item" v-for="(item, index) in list.slice(0,3)" :key="index">
                 <h3 class="list-title">
-                  <a target="_self">{{item.title}}111</a>
+                  <a target="_self" @click.stop="viewDetail">{{item.title}}111</a>
                 </h3>
                 <p class="list-desc">{{item.content}}</p>
                 <div class="list-bottom">
@@ -34,7 +34,7 @@
             <ul class="list-ul">
               <li class="list-item" v-for="(item, index) in list.slice(3,6)" :key="index">
                 <h3 class="list-title">
-                  <a target="_self">{{item.title}}</a>
+                  <a target="_self" @click.stop="viewDetail">{{item.title}}</a>
                 </h3>
                 <p class="list-desc">{{item.content}}</p>
                 <div class="list-bottom">
@@ -109,6 +109,7 @@ export default {
     };
   },
   methods:{
+
     showDiv() {
       let showId = document.getElementById(`${this.animateId}`);
       // console.log('showId==', showId)
@@ -125,6 +126,15 @@ export default {
       if(divTop<=clients){
         this.show = true
       }
+    },
+
+    viewDetail(item) {
+      this.$router.push({
+        path:'/trendsDetail',
+        query:{
+          id:1
+        }
+      })
     }
   },
   mounted () {

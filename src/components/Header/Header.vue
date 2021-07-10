@@ -10,7 +10,7 @@
       <ul class="menu_list">
         <li :class="[{'active_menu':$route.path === '/index'}]" @click.stop="routerLink('/index')">首页</li>
         <li :class="[{'active_menu':$route.path === '/about'}]" @click.stop="routerLink('/about')">关于我们</li>
-        <li :class="[{'active_menu':$route.path === '/Business'}]" @click.stop="routerLink('/Business')">业务领域</li>
+        <li :class="[{'active_menu':$route.path === '/Business'}]" @click.stop="routerLink('/business')">业务领域</li>
         <li :class="[{'active_menu':$route.path === '/trends'}]" @click.stop="routerLink('/trends')">行业动态</li>
         <li :class="[{'active_menu':$route.path === '/contact'}]" style="border:0" @click.stop="routerLink('/contact')">联系我们</li>
       </ul>

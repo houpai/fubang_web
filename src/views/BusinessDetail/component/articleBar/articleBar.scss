@@ -1,0 +1,41 @@
+.articleBar_component {
+  display: flex;
+  align-items: center;
+
+
+  .router_btn {
+    font-family: 'Microsoft YaHei';
+    display: inline-block;
+    font-size: 12px;
+    color: #666;
+    font-weight: normal;
+    font-style: normal;
+    text-decoration: none;
+    word-wrap: break-word;
+    word-break: break-all;
+    outline: none;
+    cursor: pointer;
+  }
+
+  .router_btn:hover{
+    color: #059fe9;
+  }
+
+  .split_line {
+    font-size: 12px;
+    color: #666;
+    margin: 0 6px;
+  }
+
+  .article_name {
+    font-family: 'Microsoft YaHei';
+    font-size: 12px;
+    color: #999;
+    font-weight: normal;
+    font-style: normal;
+    text-decoration: none;
+    word-wrap: break-word;
+    word-break: break-all;
+  }
+
+}

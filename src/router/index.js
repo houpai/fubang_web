@@ -20,10 +20,17 @@ export const constantRoutes = [
     }
   },
   {
-    path: "/Business",
+    path: "/business",
     component: () => import("@/views/Business/business"),
     meta:{
-      title: '行业领域'
+      title: '业务领域'
+    }
+  },
+  {
+    path: "/businessDetail",
+    component: () => import("@/views/BusinessDetail/BusinessDetail"),
+    meta:{
+      title: '业务领域'
     }
   },
   {
@@ -34,14 +41,21 @@ export const constantRoutes = [
     }
   },
   {
+    path: "/trendsDetail",
+    component: () => import("@/views/TrendsDetail/TrendsDetail"),
+    meta:{
+      title: '行业动态'
+    }
+  },
+  {
     path: "/contact",
-    component: () => import("@/views/Contact/contact"),
+    component: () => import("@/views/Contact/Contact"),
     meta:{
       title: '联系我们'
     }
   },
 
-  
+
   {
     path: "/404",
     component: () => import("@/views/404"),
